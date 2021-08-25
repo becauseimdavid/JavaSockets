@@ -3,6 +3,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/**
+ * Created by BecauseImDavid on 8/25/2021.
+ */
+
 public abstract class Connection extends Connectable {
 
 	public Connection(Socket socket) {

@@ -1,6 +1,10 @@
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
+/**
+ * Created by BecauseImDavid on 8/25/2021.
+ */
+
 public abstract class Connectable {
 
 	Socket socket;

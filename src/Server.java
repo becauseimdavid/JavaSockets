@@ -4,6 +4,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Arrays;
 
+/**
+ * Created by BecauseImDavid on 8/25/2021.
+ */
+
 public class Server {
 
 	int port;
