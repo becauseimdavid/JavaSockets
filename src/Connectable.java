@@ -14,7 +14,7 @@ public abstract class Connectable {
 		if (socket == null)
 			return;
 		try {
-			(this.socket = socket).setSoLinger(true, 1000);
+			(this.socket = socket).setSoLinger(true, 0);
 			(thread = new Thread(() -> run())).start();
 		} catch (Exception exc) {
 			throw Server.error(exc);
@@ -22,7 +22,7 @@ public abstract class Connectable {
 	}
 
 	void connect(String host, int port) throws Exception {
-		(socket = new Socket(host, port)).setSoLinger(true, 1000);
+		(socket = new Socket(host, port)).setSoLinger(true, 0);
 		(thread = new Thread(() -> run())).start();
 	}
 
